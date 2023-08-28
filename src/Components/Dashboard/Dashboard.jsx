@@ -2,8 +2,6 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import Sidebars from "./Sidebars";
 import Navbars from "../Navbars/Navbars";
 import Endbars from "./Endbars";
-
-import { BiRightArrow } from "react-icons/Bi";
 import Quran from "./Qurans";
 
 const Dashboard = () => {
