@@ -33,7 +33,7 @@ const Navbars = ({ OnSurahChange }) => {
         <div className="justify-between w-screen">
           <div className="flex justify-start">
             <a className="btn btn-ghost normal-case xl:text-xl sm:text-xs">
-              <img className=" w-14 h-10" src="../../public/quran1.jpg" alt="quranlogo" />
+              <img className=" w-14 h-10" src="quran1.jpg" alt="quranlogo" />
             </a>
           </div>
           <div className=" flex">

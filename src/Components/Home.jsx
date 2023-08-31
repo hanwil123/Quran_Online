@@ -6,7 +6,7 @@ const Home = () => {
       <div
         className="hero min-h-screen w-screen"
         style={{
-          backgroundImage: "url(../../public/quran.jpg)",
+          backgroundImage: "url(quran.jpg)",
         }}
       >
         <div className="hero-overlay bg-opacity-60"></div>
