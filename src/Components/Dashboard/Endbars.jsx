@@ -9,7 +9,7 @@ const Endbars = ({ onBookmarkClick }) => {
 
   const ambilBookmarks = async () => {
     try {
-      const response = await axios.get(`http://localhost:8000/bookmarks`);
+      const response = await axios.get(`https://go-quran-production.up.railway.app/bookmarks`);
       const datas = response.data;
       console.log(datas);
       setBookmarksDatas(datas);
@@ -28,7 +28,7 @@ const Endbars = ({ onBookmarkClick }) => {
   };
   const deleteAllBookmarks = async () => {
     try {
-      const response = await axios.delete(`http://localhost:8000/bookmarks`);
+      const response = await axios.delete(`https://go-quran-production.up.railway.app/bookmarks`);
       const data = response.data; // Menggunakan response.data daripada response.d
       console.log(data);
       alert("Yakhin mau dihapus???");

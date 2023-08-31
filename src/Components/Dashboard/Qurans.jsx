@@ -38,7 +38,7 @@ const Quran = ({ surah, bookmarkData, displaySurah, addScrollRef, scrollRefs }) 
         
         // Fetch data based on bookmarkData.id
         const response = await axios.get(
-          `http://localhost:8000/bookmarks/${bookmarkData.id}`
+          `https://go-quran-production.up.railway.app/bookmarks/${bookmarkData.id}`
         );
         const bookmarks = response.data;
         setDataBookmark(bookmarks);
@@ -61,7 +61,7 @@ const Quran = ({ surah, bookmarkData, displaySurah, addScrollRef, scrollRefs }) 
     const bookmarkData = { ...ayatData, ...surahNomorData, ...surahNama };
 
     axios
-      .post("http://localhost:8000/bookmarks", bookmarkData)
+      .post("https://go-quran-production.up.railway.app/bookmarks", bookmarkData)
       .then((response) => {
         console.log("Bookmark added:", response.data);
 
