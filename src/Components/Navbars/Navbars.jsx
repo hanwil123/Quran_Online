@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { BsSun } from "react-icons/Bs";
-import { BsMoonFill } from "react-icons/Bs";
-import { BiSearch } from "react-icons/Bi";
+import { FiSun } from "react-icons/fi";
+import { FaMoon } from "react-icons/fa";
+import { FiSearch } from "react-icons/fi";
 
 const Navbars = ({ OnSurahChange }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -75,7 +75,7 @@ const Navbars = ({ OnSurahChange }) => {
                   type="submit"
                   className=" sm:w-[40px] text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
-                  <BiSearch/>
+                  <FiSearch/>
                 </button>
               </div>
             </form>
@@ -84,10 +84,10 @@ const Navbars = ({ OnSurahChange }) => {
             <button className="btn btn-ghost" onClick={handleModeToggle}>
               {isDarkMode ? (
                 <h2>
-                  <BsMoonFill />
+                  <FaMoon />
                 </h2>
               ) : (
-                <BsSun />
+                <FiSun />
               )}
             </button>
           </div>

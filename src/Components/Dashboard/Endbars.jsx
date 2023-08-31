@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
-import { BsFillBookmarkPlusFill } from "react-icons/Bs";
-import { MdDeleteForever } from "react-icons/Md";
+import { BiBookmark } from "react-icons/bi";
+import { MdDeleteForever } from "react-icons/md";
 
 const Endbars = ({ onBookmarkClick }) => {
   const [bookmarkDatas, setBookmarksDatas] = useState([]);
@@ -49,7 +49,7 @@ const Endbars = ({ onBookmarkClick }) => {
               </div>
               <div className="bg-white/10 text-gray-500 group-hover:bg-white/10 w-full group-active:scale-95 self-stretch pl-2 rounded flex items-center space-x-2 transition-all duration-200 dark:group-hover:text-white dark:hover:text-white text-sm">
                 <h1>
-                  <BsFillBookmarkPlusFill />
+                  <BiBookmark />
                 </h1>
 
                 <span className="font-QuicksandMedium">BOOKMARKS</span>
@@ -90,7 +90,7 @@ const Endbars = ({ onBookmarkClick }) => {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                   >
-                    <BsFillBookmarkPlusFill />
+                    <BiBookmark />
                   </svg>
 
                   <span className="font-QuicksandMedium">

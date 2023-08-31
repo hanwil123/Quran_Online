@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
-import { BsPinFill } from "react-icons/Bs";
+import { BiPin } from "react-icons/bi";
 
 const Quran = ({ surah, bookmarkData, displaySurah, addScrollRef, scrollRefs }) => {
   const [ayat, setAyat] = useState([]);
@@ -110,7 +110,7 @@ const Quran = ({ surah, bookmarkData, displaySurah, addScrollRef, scrollRefs }) 
                         bookmarkStatus[ayatData.nomorAyat] ? "text-red-500" : ""
                       }
                     >
-                      <BsPinFill />
+                      <BiPin />
                     </button>
                   </div>
                 </div>
@@ -150,7 +150,7 @@ const Quran = ({ surah, bookmarkData, displaySurah, addScrollRef, scrollRefs }) 
                         : ""
                     }
                   >
-                    <BsPinFill />
+                    <BiPin />
                   </button>
                 </div>
               </div>
