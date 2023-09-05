@@ -17,9 +17,22 @@ const Home = () => {
               BACALAH AL QURAN WALAUPUN HANYA 1 AYAT INSYA ALLAH AKAN MEMBAWA
               KEBAIKAN
             </p>
-            <a href="/Dashboard">
-              <button className="btn btn-primary">MARI MEMBACA AL QURAN</button>
-            </a>
+            <div className=" flex-row flex gap gap-x-4 justify-center">
+              <div>
+                <a href="/Dashboard">
+                  <button className="btn btn-primary">
+                    Mulai Membaca Al Quran
+                  </button>
+                </a>
+              </div>
+              <div>
+                <a href="/Register">
+                  <button className="btn btn-primary">
+                    Sign Up
+                  </button>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
