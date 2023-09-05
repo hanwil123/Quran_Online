@@ -12,7 +12,7 @@ const Login = () => {
     r.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/login",
+        "https://go-quran-production.up.railway.app/api/login",
         {
           email,
           password,

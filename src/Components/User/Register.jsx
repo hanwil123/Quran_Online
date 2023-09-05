@@ -12,7 +12,7 @@ const Register = () => {
     e.preventDefault();
     // eslint-disable-next-line no-undef
     const response = await axios.post(
-      "http://localhost:8000/api/register",
+      "https://go-quran-production.up.railway.app/api/register",
       {
         nama,
         email,
