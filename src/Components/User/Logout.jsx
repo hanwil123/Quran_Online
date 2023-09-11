@@ -1,5 +1,5 @@
 import React from 'react'
-import "./logout.css";
+import "./Logout.css";
 import { useState } from "react";
 import { useCookies } from "react-cookie";
 import { useNavigate } from "react-router-dom";
