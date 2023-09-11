@@ -1,8 +1,8 @@
-.btn {
+.btnn {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 13rem;
+    width: 5rem;
     height: 3rem;
     background-size: 300% 300%;
     backdrop-filter: blur(1rem);
@@ -29,7 +29,7 @@
   strong {
     z-index: 2;
     font-family: 'Avalors Personal Use';
-    font-size: 12px;
+    font-size: 7px;
     letter-spacing: 5px;
     color: #FFFFFF;
     text-shadow: 0 0 4px white;
@@ -57,23 +57,23 @@
     background: rgba(142, 81, 234, 0.704);
   }
   
-  .btn:hover #container-stars {
+  .btnn:hover #container-stars {
     z-index: 1;
     background-color: #212121;
   }
   
-  .btn:hover {
+  .btnn:hover {
     transform: scale(1.1)
   }
   
-  .btn:active {
+  .btnn:active {
     border: double 4px #FE53BB;
     background-origin: border-box;
     background-clip: content-box, border-box;
     animation: none;
   }
   
-  .btn:active .circle {
+  .btnn:active .circle {
     background: #FE53BB;
   }
   

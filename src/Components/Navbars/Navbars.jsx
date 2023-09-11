@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FiSun } from "react-icons/fi";
 import { FaMoon } from "react-icons/fa";
 import { FiSearch } from "react-icons/fi";
+import Logout from "../User/Logout";
 
 const Navbars = ({ OnSurahChange }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -81,15 +82,7 @@ const Navbars = ({ OnSurahChange }) => {
             </form>
           </div>
           <div className="flex-none gap-2">
-            <button className="btn btn-ghost" onClick={handleModeToggle}>
-              {isDarkMode ? (
-                <h2>
-                  <FaMoon />
-                </h2>
-              ) : (
-                <FiSun />
-              )}
-            </button>
+            <Logout/>
           </div>
         </div>
       </div>

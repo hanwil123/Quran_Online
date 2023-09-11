@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import { BiPin } from "react-icons/bi";
+import Cookies from "js-cookie";
+
 
 const Quran = ({ surah, bookmarkData, displaySurah, addScrollRef, scrollRefs }) => {
   const [ayat, setAyat] = useState([]);
@@ -8,6 +10,7 @@ const Quran = ({ surah, bookmarkData, displaySurah, addScrollRef, scrollRefs }) 
   const [bookmarkStatus, setBookmarkStatus] = useState({});
   const [dataBookmark, setDataBookmark] = useState([]);
   const [surahhh, setSurahhh] = useState([]);
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -59,9 +62,14 @@ const Quran = ({ surah, bookmarkData, displaySurah, addScrollRef, scrollRefs }) 
     const surahNomorData = { nomor: surah.nomor };
     const surahNama = {namaSurah : surah.namaLatin}
     const bookmarkData = { ...ayatData, ...surahNomorData, ...surahNama };
+    const tokenUser = Cookies.get('token-user');
 
     axios
-      .post("https://go-quran-production.up.railway.app/bookmarks", bookmarkData)
+      .post("https://go-quran-production.up.railway.app/bookmarks", bookmarkData, {
+        headers: {
+          "Authorizations": `${tokenUser}`,
+        },
+      }) 
       .then((response) => {
         console.log("Bookmark added:", response.data);
 

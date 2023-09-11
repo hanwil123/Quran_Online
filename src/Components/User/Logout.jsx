@@ -21,13 +21,13 @@ const Logout = () => {
         // Perform additional cleanup tasks, such as clearing local storage or session storage
         localStorage.clear();
         sessionStorage.clear();
-        navigate("/Login");
+        navigate("/");
       }
     };
   
     return (
       <div>
-        <button onClick={handleDelete} className="btn" type="button">
+        <button onClick={handleDelete} className="btnn" type="button">
           <strong>Logout</strong>
           <div id="container-stars">
             <div id="stars"></div>

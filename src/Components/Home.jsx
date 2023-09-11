@@ -17,11 +17,13 @@ const Home = () => {
               BACALAH AL QURAN WALAUPUN HANYA 1 AYAT INSYA ALLAH AKAN MEMBAWA
               KEBAIKAN
             </p>
+            <br/>
+            <p>Buatlah akun untuk mendapatkan fitur bookmark</p>
             <div className=" flex-row flex gap gap-x-4 justify-center">
               <div>
                 <a href="/Dashboard">
                   <button className="btn btn-primary">
-                    Mulai Membaca Al Quran
+                    Baca tanpa  fitur bookmark
                   </button>
                 </a>
               </div>
